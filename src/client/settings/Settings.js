@@ -67,7 +67,7 @@ export default class Settings extends React.Component {
     locale: 'auto',
     votingPower: 'auto',
     votePercent: 10000,
-    showNSFWPosts: null,
+    showNSFWPosts: false,
   };
 
   componentWillMount() {
@@ -75,6 +75,7 @@ export default class Settings extends React.Component {
       locale: this.props.locale,
       votingPower: this.props.votingPower,
       votePercent: this.props.votePercent / 100,
+      showNSFWPosts: this.props.showNSFWPosts,
     });
   }
 
